@@ -38,4 +38,16 @@ function fv3(){
     console.log(index)
 }
 
-fv3()
+
+
+function fv4(szam){
+    let szoveg ;
+    
+    //ternális operátorral old meg!
+    //A fügvény adja vissza a hárommal való osztási maradékot, szövegesen 
+    szam % 3 == 0 ?  szoveg="nulla" : szam % 3 == 1 ? szoveg="egy" : szoveg= "kettő";
+    return szoveg;
+}
+//szöveg: "nulla", "egy". "kettő"
+fv4()
+console.log()
