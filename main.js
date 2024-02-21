@@ -45,9 +45,15 @@ function fv4(szam){
     
     //ternális operátorral old meg!
     //A fügvény adja vissza a hárommal való osztási maradékot, szövegesen 
-    szam % 3 == 0 ?  szoveg="nulla" : szam % 3 == 1 ? szoveg="egy" : szoveg= "kettő";
+    szam % 3 == 0 ?  //első feltétel
+    szoveg="nulla" : //ha a feltétel igaz
+    szam % 3 == 1 ? //ha a feltétel hamis, akkor megint meg kell vizsgálni
+    szoveg="egy" : //masodik feltel igaz ága
+    szoveg= "kettő"; // második feltétel hamis ága 
+    console.log(szoveg)
     return szoveg;
+
 }
 //szöveg: "nulla", "egy". "kettő"
 fv4()
-console.log()
+console.log(szoveg)
